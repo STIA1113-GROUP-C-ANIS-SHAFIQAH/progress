@@ -1,0 +1,158 @@
+package assignmet2;
+import java.util.Scanner;
+public class PersonalAccount {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+Scanner sc = new Scanner (System.in);
+		
+		System.out.println("");
+		System.out.println("############ WELCOME TO GO BANK ISLAM ############");
+		System.out.println("#  1.	DuitNow                                  #");
+		System.out.println("##################################################");
+		
+		System.out.println("");
+		System.out.println("PLEASE CHOOSE 1 !");
+		int next = sc.nextInt();
+		
+		System.out.println("");
+		String anotherBank = sc.nextLine();
+		System.out.println("XXXXXXXXXXXXXXXXXXX DuitNow XXXXXXXXXXXXXXXXXXXXX");
+		
+		System.out.println("Your Account Number : ");
+		String acc = sc.nextLine();
+		System.out.println("");
+		
+	    System.out.println("______PLEASE INSERT THE INFORMATION DETAILS______");
+	    System.out.println("");
+	    System.out.println("Recipient Bank Name : ");
+		String bankname1 = sc.next();
+        sc.nextLine();
+		System.out.println("Recipient Account : ");
+		String acc1 = sc.next();
+		System.out.println("Recipient Name : ");
+		String name1 = sc.next();
+		sc.nextLine();
+		System.out.println("Recipient Reference : ");
+		String reference1 = sc.next();
+		sc.nextLine();
+		System.out.print("Amount : RM ");
+		double amount1 = sc.nextDouble();
+		
+		
+		System.out.println("");
+		System.out.println("^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^");
+		System.out.println("^  *Fee : 2%                                                           ^");
+		System.out.println("^  *Please take note that RM1.00 will be charged for every transaction ^");
+		System.out.println("^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^");
+		System.out.println("");
+		
+		System.out.println("CHOOSE 1 TO CONTINUE !");
+		int next1 = sc.nextInt();
+		String anotherBank1 = sc.nextLine();
+		
+		System.out.println("");
+		System.out.print("Total : RM ");
+		double total1 = (amount1+(amount1*0.02)+1);
+		System.out.printf("%.2f",  total1);	
+		System.out.println("\n");
+		System.out.print("______________________________________________________________________________________________________________");
+		System.out.println("\n");
+		
+		System.out.println("##    ##     ##    #########  #########  ##        ##      ######## ######### ######## #########    ### ### ");
+		System.out.println("##    ##   ##  ##  ##     ##  ##     ##  ###      ##       ######## ######### ######## #########    ### ### ");
+		System.out.println("########  ##    ## ##     ##  ##     ##   ###   ###              ## ##     ##       ##        ##    ### ### ");
+		System.out.println("######## ######### #########  #########     #####          ######## ##     ## ######## #########    ### ### ");
+		System.out.println("##    ## ##     ## ##         ##              ##           ##       ##     ## ##       ##           ### ### ");
+		System.out.println("##    ## ##     ## ##         ##              ##           ######## ######### ######## #########            ");
+		System.out.println("##    ## ##     ## ##         ##              ##           ######## ######### ######## #########    ### ### ");
+		System.out.print("______________________________________________________________________________________________________________");
+		
+		System.out.println("\n");
+		System.out.println("                                  TO OUR BELOVED GO BANK ISLAM USER <3                                      ");
+		System.out.println("                             We are going to send you some present to you <3                                ");		
+		System.out.print("______________________________________________________________________________________________________________");		
+		System.out.println("\n                               LETS PLAY A GUESS NUMBER GAME FIRST !!                                     ");
+		System.out.println("\n                   You Will Be Asked To Guess A Number Before Proceed to your gifts                       ");
+		System.out.println("                                        You can attempt 5 times                                             ");
+		
+		int number = 1 + (int)(100 * Math.random());
+        int K = 5;
+        int i, guess;
+
+
+        System.out.println("\nA number is chosen" + " between 1 to 100.");
+
+        for (i = 0; i < K; i++) {
+
+
+        System.out.println("Guess the number:");
+        guess = sc.nextInt();
+
+        if (number == guess) {
+
+        System.out.println("Congratulations!" + " You guessed the number.");
+
+       break;
+ }
+
+       else if (number > guess && i != K - 1) {
+
+       System.out.println("The number is " + "greater than " + guess);
+}
+
+       else if (number < guess && i != K - 1) {
+
+       System.out.println("The number is" + " less than " + guess);
+
+}
+
+}
+        if (i == K) {
+
+       System.out.println("You have exceeded the maximum attempts.");
+       System.out.println("The number is " + number);
+}
+		System.out.print("______________________________________________________________________________________________________________");        
+
+		System.out.println("\n");
+		System.out.println("                                  PLEASE CHOOSE YOUR GIFTS<3                                                ");
+		System.out.println("\n1.Notebook + Calender      ");
+		System.out.println("\n2.Bag + Calender           ");
+		System.out.println("\n3.Tumblr Bottle + Calender ");
+		System.out.println("\n4.We Bare Bear + Calender  ");
+		System.out.println("\n5.Colour Pencil + Calender ");
+		System.out.println("\nInsert the NUMBER :        ");
+
+		
+		int gift=0;
+		gift = sc.nextInt();
+	
+
+if (gift == 1) {
+	System.out.println("\nYou choose Notebook and 2022 Calender as a gift.     ");
+}
+else if(gift == 2) {
+	System.out.println("\nYou choose Bag and 2022 Calender as a gift.          ");
+}
+else if (gift == 3) {
+	System.out.println("\nYou choose Tumblr Bottle and 2022 Calender as a gift.");
+}
+else if (gift == 4) {
+	System.out.println("\nYou choose We Bare Bear and 2022 Calender as a gift. ");
+}
+else if (gift == 5) {
+	System.out.println("\nYou choose Colour Pencil and 2022 Calender as a gift.");
+}
+else {
+System.out.println("\nYou don't choose any gift.");	
+}
+
+sc.close();
+        System.out.println("\n      PLEASE BE NOTED THAT YOUR GIFT WILL ARRIVED TO YOUR HOUSE WITHIN 2 WEEKS.");
+		System.out.println("########################## THANK YOU FOR USING GO BANK ISLAM ##########################");
+		
+}
+
+}
